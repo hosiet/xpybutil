@@ -1,0 +1,25 @@
+Source: python-xpybutil
+Section: python
+Priority: optional
+Maintainer: Boyuan Yang <073plan@gmail.com>
+Build-Depends:
+ debhelper (>= 10),
+ dh-exec (>= 0.3),
+ dh-python,
+ python-all (>= 2.6.6-3~),
+ python-xcffib,
+Standards-Version: 3.9.8
+Homepage: https://github.com/BurntSushi/xpybutil
+Vcs-Git: https://github.com/BurntSushi/xpybutil
+X-Python-Version: >= 2.6
+
+Package: python-xpybutil
+Architecture: all
+Depends:
+ python-xcffib,
+ ${python:Depends},
+ ${misc:Depends},
+Description: Abstraction over X Python Binding
+ xpybutil is an abstraction over the X Python Binding (xpyb - the Python
+ version of XCB). It exists because xpyb is a very low level library
+ that communicates with X.
